@@ -1,0 +1,116 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+body {
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #ffe4f2, #d9ecf2);
+    margin: 0;
+}
+
+/* Header and Navigation */
+header {
+    background: linear-gradient(to right, #6200ea, #8e44ad);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    background-color: #3700b3;
+    transform: scale(1.1);
+}
+
+/* Main Content */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6200ea;
+}
+
+section {
+    margin: 20px 0;
+}
+
+p, ul {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: disc inside;
+}
+
+/* Highlighted Cards (e.g., Classes) */
+.card {
+    background: linear-gradient(to top left, #f0f8ff, #e0ffe4);
+    padding: 15px;
+    border: 1px solid #d4edda;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #8e44ad, #6200ea);
+    color: white;
+    margin-top: 20px;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Links */
+a {
+    color: #6200ea;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        margin: 15px;
+        padding: 15px;
+    }
+}
